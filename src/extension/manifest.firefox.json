@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "Knitto Textile Admin tools",
-    "description": "Unify Your Communication: Multichannel Support for Maximum Impact.",
+    "name": "React Chrome Extension Boilerplate",
+    "description": "Boilerplate chrome extension.",
     "permissions": ["storage"],
     "browser_specific_settings": {
         "gecko": {
-          "id": "fikri.mubarok.knitto@gmail.com"
+          "id": "fkrmubaroq@gmail.com"
         }
       },
     "action":{
@@ -23,10 +23,10 @@
     "content_scripts": [
       {
         "js": [
-          "contentScript.js"
+          "content-script.js"
         ],
         "matches": [
-          "https://multichannel.qiscus.com/*"
+           "<all_urls>"
         ]
       }
     ]

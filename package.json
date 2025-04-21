@@ -6,7 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "webpack --watch --mode development --env browser=chrome",
-    "build": "webpack --mode production --env browser=chrome"
+    "build": "webpack --mode production --env browser=chrome",
+    "dev:firefox": "webpack --mode development --env browser=firefox plugin=web-ext -w",
+    "build:firefox": "webpack --mode production --env browser=firefox",
+    "check:firefox": "web-ext run --source-dir ",
+    "tscheck": "tsc"
   },
   "keywords": [],
   "author": "",
